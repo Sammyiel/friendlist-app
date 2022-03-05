@@ -1,0 +1,67 @@
+### add one user
+POST http://localhost:5050/users
+
+Content-Type: application/json
+
+{
+    "user_name":"Samwel Maisiba",
+    "user_email":"s.maisiba@alustudent.com",
+    "password":"password1234",
+    "user_gender":"male",
+    "date_of_birth":"26-09-1997",
+    "profile_image":"img1",
+    "user_followers":"0"
+}
+
+###
+
+POST http://localhost:3000/
+
+Content-Type: application/json
+
+{
+    "name":"Sammy"
+}
+
+### get all users/messages
+GET http://localhost:5050/users
+
+### get one user/video
+GET http://localhost:4000/videos/DJDKdn5whOc11643562047766
+
+### update user records
+PATCH http://localhost:4000/videos
+
+Content-Type: application/json
+
+{
+    "user_email": "req.body.user_email",
+    "content_id": "req.body.content_id",
+    "content_title": "req.body.content_title",
+    "content_description": "req.body.content_description",
+    "content_thumbnail": "req.body.content_thumbnail",
+    "content_topic": "req.body.content_topic",
+    "content_genre": "req.body.content_genre"
+}
+
+### delete one user
+DELETE http://localhost:4000/videos/req.body.content_id
+
+
+# USERS
+# user_name
+# user_email
+# password
+# user_gender
+# date_of_birth
+# profile_image
+# user_followers
+
+
+# MESSAGES
+# user_email
+# message_id
+# message_text
+# message_sent_time
+# message_likes
+# message_dislikes

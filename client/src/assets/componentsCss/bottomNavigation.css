@@ -1,0 +1,32 @@
+/* * {
+    background-color: rgb(6, 53, 6);
+} */
+
+.bottom-navigation {
+    position:fixed;
+    bottom: 0;
+    z-index: 99;
+    height: 70px;
+    /* background-color: green; */
+    width: 100%;
+    border-top: 1px solid #c9c9c9;
+}
+
+.bottom-nav-content{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bottom-nav-content div a{
+    color: #535353;
+    font-size: 25px;
+    align-items: center;
+    padding: 2%;
+}
+
+.bottom-nav-content div a:hover{
+    cursor: pointer;
+    color: #353535;;
+}
